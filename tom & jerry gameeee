@@ -1,0 +1,38 @@
+var cat, cat1,cat1IMG,cat2,cat2IMG,cat3,cat3IMG,cat4,cat4IMG;
+var garden,gardenIMG
+var mouse1,mouse1IMG,mouse2,mouse2IMG,mouse3,mouse3IMG,mouse4,mouse4IMG
+
+function preload() {
+cat1.IMG=loadImage("cat1.png")
+cat2.IMG=loadImage("cat2.png")
+cat3.IMG=loadImage("cat3.png")
+cat4.IMG=loadImage("cat4.png")
+cat=loadAnimation("cat1.png","cat2.png","cat3.png","cat4.png");
+mouse=loadAnimation("mouse1.png","mouse2.png","mouse3.png","mouse4.png");
+
+}
+
+function setup(){
+    createCanvas(1000,800);
+    //create tom and jerry sprites here
+
+}
+
+function draw() {
+
+    background(255);
+    //Write condition here to evalute if tom and jerry collide
+
+    drawSprites();
+}
+
+
+function keyPressed(){
+if(keyCode===LEFT_ARROW){
+    cat.velocityx=-5
+    cat.addAnimation("cat",cat2IMG);
+}
+  //For moving and changing animation write code here
+
+
+}
